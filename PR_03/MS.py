@@ -19,11 +19,20 @@ for ukuran in sepatukiri:
 
 print(f"Jumlah pasangan sepatu: {jumlah_pasangan}")
 
-"""filter() untuk mengekstrak hanya angka.
-str.isdigit digunakan untuk menyaring elemen-elemen dari string 
-yang merupakan angka."""
+"""
+ukuran = ""
+for c in idsepatu:
+    if str.isdigit(c): ukuran += c
+"""
 
-""" 'separator'.join(iterable)
-'separator': String yang akan digunakan sebagai pemisah (separator) antara setiap elemen dalam iterable yang digabungkan. 
-Dalam kasus ''.join(), pemisahnya adalah string kosong (''), sehingga elemen-elemen digabungkan tanpa pemisah.
-iterable: Koleksi elemen (seperti list, tuple, atau string) yang ingin digabungkan."""
+
+"""
+filter adalah fungsi bawaan Python yang digunakan untuk menyaring elemen-elemen dari sebuah iterable (dalam hal ini, string idsepatu).
+
+str.isdigit adalah metode yang memeriksa apakah karakter adalah digit (angka). 
+Jadi, filter(str.isdigit, idsepatu) akan menyaring semua karakter dari idsepatu dan hanya mengambil karakter yang berupa angka.
+
+''.join(...) berfungsi untuk menggabungkan elemen-elemen hasil filter yang berupa angka menjadi satu string utuh. 
+Dalam kasus ini, karena kita tidak memberikan pemisah ('' berarti tanpa pemisah), 
+angka-angka tersebut digabungkan tanpa ada spasi atau karakter lain di antara mereka.
+"""

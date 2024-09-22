@@ -1,5 +1,6 @@
 # N = lantai total
 # M = energi awal
+# K = banyak kasus
 # X = lantai awal
 # Y = lantai yg dituju
 # A[i] = Energi tiap lantai ke-i
